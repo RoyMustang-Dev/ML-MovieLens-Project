@@ -47,14 +47,14 @@ These files contain 1,000,209 anonymous ratings of approximately 3,900 movies ma
     * Ratings are made on a 5-star scale (whole-star ratings only)
     * A timestamp is represented in seconds since the epoch is returned by time(2)
     * Each user has at least 20 ratings
+    * UserIDs range between 1 and 6040
 
 `Field` : `Description`<br/>
 
     * UserID : Unique identification for each user
-    * MovieID----------------- Unique identification for each movie
-    * Rating------------------ User rating for each movie
-    * Timestamp--------------- Timestamp generated while adding user review
-    * UserIDs range between 1 and 6040<br/>
+    * MovieID : Unique identification for each movie
+    * Rating : User rating for each movie
+    * Timestamp : Timestamp generated while adding user review
 
 2. Users.dat<br/>
 **`Format` - `UserID::Gender::Age::Occupation::Zip-code`**<br/>
@@ -64,7 +64,7 @@ These files contain 1,000,209 anonymous ratings of approximately 3,900 movies ma
     * Gender is denoted by an "M" for male and "F" for female
     * Age is chosen from the following ranges:<br/>
 
-        Value-------------------Description<br/>
+        Value--------Description<br/>
             a). 1 => "Under 18"<br/>
             b). 18 => "18-24"<br/>
             c). 25 => "25-34"<br/>
@@ -75,7 +75,7 @@ These files contain 1,000,209 anonymous ratings of approximately 3,900 movies ma
 
     * Occupation is chosen from the following choices:<br/>
 
-        Value-------------------Description<br/>
+        Value--------Description<br/>
             a). 0 => "other or not specified"<br/>
             b). 1 => "academic/educato"<br/>
             c). 2 => "artist"<br/>
